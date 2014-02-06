@@ -43,6 +43,8 @@
             margin-top: 1em;
             margin-bottom: 1em;
             color: #999999;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         pre:before {
             display:block;
@@ -296,9 +298,10 @@
                         <span class="propname">:END:</span> <br/> <br/>
 			{block:Photos}
 			<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" class="photoset"/>
-			{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+			{block:Caption}<div class="caption clearfix">{Caption}</div>{/block:Caption}
 			{/block:Photos}
-			{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+                        <div class="clearfix"></div>
+			{block:Caption}<div class="caption clearfix">{Caption}</div>{/block:Caption}
 		    </div>
 		    {/block:Photoset}
                     
