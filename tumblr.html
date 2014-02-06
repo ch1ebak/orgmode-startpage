@@ -32,8 +32,12 @@
             display: inline;
             float:left;
         }
-        a:visited {
-            color: blue;
+        a:hover {
+            color: black;
+            background-color: #B4EEB4;
+        }
+        a:visited, a {
+            color: #3A5FCD;
         }
         strong {
             font-weight:bold;
@@ -42,31 +46,35 @@
         pre {
             margin-top: 1em;
             margin-bottom: 1em;
-            color: #999999;
+            color: #7F7F7F;
             overflow: hidden;
             text-overflow: ellipsis;
         }
         pre:before {
             display:block;
             content: "#+BEGIN_SRC";
+            color: #B22222;
         }
         pre:after {
             display:block;
             content: "#+END_SRC";
+            color: #B22222;
         }
 
         blockquote {
             margin-top: 1em;
             margin-bottom: 1em;
-            color: #999999;
+            color: #7F7F7F;
         }
         blockquote:before {
             display:block;
             content: "#+BEGIN_QUOTE";
+            color: #B22222;
         }
         blockquote:after {
             display:block;
             content: "#+END_QUOTE";
+            color: #B22222;
         }
 
         b, strong {
@@ -110,15 +118,19 @@
         }
 
         .propname {
-            color:#666666;
+            color:#A020F0;
         }
 
         h1, h2, h3, h4, h5, h6, .l1title, .l2title {
             font-weight: bold;
-            color: green;
+            color: #A0522D;
         }
         .heading {
-            color: #666666;
+            color: #7F7F7F;
+        }
+        .heading a {
+            color: #191970;
+            font-weight: bold;
         }
 
 
@@ -385,5 +397,7 @@
 		{/block:Pagination}
 	    </section><!--close content-->
         </div>
+        <br/><br/><br/>
+        <a href="https://github.com/praetoriansentry/tumblr-emacs-theme">Org-mode theme for Tumblr</a>
     </body>
 </html>
