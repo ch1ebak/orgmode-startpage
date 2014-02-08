@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
 	{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+        <meta name="text:Home Page Name" content="Index" />
         
 	<link rel="apple-touch-icon" href="{PortraitURL-128}" />
 	<link rel="shortcut icon" href="{Favicon}" />
@@ -404,10 +406,12 @@
 		<div class="pagination">
                     -------------------------------------------------------------------------------------
                     <br />
-                    Navigation
-                    <br />
+                    Navigation <br />
+                    - <a href="{BlogURL}">{text:Home Page Name}</a><br />
 		    {block:PreviousPage} - <a class="prev" href="{PreviousPage}">{lang:Previous}</a> <br />{/block:PreviousPage}
-		    {block:NextPage} - <a class="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
+                    {block:NextPage} - <a class="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
+                    <br />
+                    -------------------------------------------------------------------------------------
 		</div>
 		{/block:Pagination}
 	    </section><!--close content-->
@@ -417,7 +421,7 @@
             
             <footer>
                 <p>
-                    -------------------------------------------------------------------------------------
+
                     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">
                         <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
                     </a>
