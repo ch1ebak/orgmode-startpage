@@ -190,10 +190,11 @@
                         <span class="l2title">** {block:Title}{Title}{/block:Title}</span></span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
                         
 			{Body}
@@ -208,11 +209,14 @@
                         <span class="l2title">** A Quote </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
+
+                        
 			<blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
 			{block:Source}<p class="source">&mdash; {Source}</p>{/block:Source}
 		    </div>
@@ -226,10 +230,11 @@
                         <span class="l2title">** {Name} </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
                         
 			<a href="{URL}">{Name}</a>
@@ -246,10 +251,11 @@
                         <span class="l2title">** A Video </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
 			{Video-500}
 			{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
@@ -264,11 +270,13 @@
                         <span class="l2title">** Some Audio </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
+                        
 			{block:AlbumArt}<img src="{AlbumArtURL}" alt="">{/block:AlbumArt}
 			{AudioPlayerBlack}
 			{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
@@ -283,10 +291,11 @@
                         <span class="l2title">** A Photo </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
                         
 			{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}
@@ -303,11 +312,13 @@
                         <span class="l2title">** A Set of Photos </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
+                        
 			{block:Photos}
 			<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" class="photoset"/>
 			{block:Caption}<div class="caption clearfix">{Caption}</div>{/block:Caption}
@@ -325,11 +336,13 @@
                         <span class="l2title">** A Panorama </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
+                        
 			{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
 			{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
 		    </div>
@@ -343,11 +356,13 @@
                         <span class="l2title">** {block:Title}<h3>{Title}</h3>{/block:Title} </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
+                        
 			<ul class="conversation">
 			    {block:Lines}
 			    <li class="line {Alt}">
@@ -367,11 +382,13 @@
                         <span class="l2title">** An Answer </span><br />
                         <span class="propname">:PROPERTIES:</span> <br />
                         <span class="propname">:CUSTOM_ID:</span> {PostID} <br />
-                        <span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {block:HasTags}:{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}{/block:HasTags}
-                        <br />
+                        {block:HasTags}<span class="propname">:TAGS:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :{block:Tags}<a href="{TagURL}">{Tag}</a>:{/block:Tags}
+                        <br />{/block:HasTags}
                         <span class="propname">:DATE:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{ShortURL}">{block:Date}&lt;{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {ShortDayOfWeek} {24HourWithZero}:{Minutes}&gt;</a> {/block:Date} <br />
+                        {block:NoteCount}<span class="propname">:NOTES:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCount}<br />{/block:NoteCount}
                         <span class="propname">:END:</span> <br/> <br/>
+                        
 			<img src="{AskerPortraitURL-40}" />
 			{Asker}
 			{Question}
@@ -385,14 +402,12 @@
                 
 		{block:Pagination}
 		<div class="pagination">
-		    {block:PreviousPage}<a class="prev" href="{PreviousPage}">{lang:Previous}</a>{/block:PreviousPage}
-                    
-		    {block:JumpPagination length="5"}
-		    {block:CurrentPage}<span class="current-page">{PageNumber}</span>{/block:CurrentPage}
-		    {block:JumpPage}<a class="jump-page" href="{URL}">{PageNumber}</a>{/block:JumpPage}
-		    {/block:JumpPagination}
-                    
-		    {block:NextPage}<a class="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
+                    -------------------------------------------------------------------------------------
+                    <br />
+                    Navigation
+                    <br />
+		    {block:PreviousPage} - <a class="prev" href="{PreviousPage}">{lang:Previous}</a> <br />{/block:PreviousPage}
+		    {block:NextPage} - <a class="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
 		</div>
 		{/block:Pagination}
 	    </section><!--close content-->
