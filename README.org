@@ -1,5 +1,0 @@
-* Tumblr Org-Mode Theme
-
-Simple text based theme for tumblr that looks like my org-mode
-files.  Some of the design isn't exactly how org-mode works... but
-it's close enough.  E.g. I don't want to put tags into the headlines.
