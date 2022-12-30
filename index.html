@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width" />
+        <title>my start page &mdash; ch1ebak</title>
+
+        <meta name="text:Home Page Name" content="Index" />
+
+        <link rel="apple-touch-icon" href="{PortraitURL-128}" />
+        <link rel="shortcut icon" href="{Favicon}" />
+        <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssreset/cssreset-min.css" />
+        <style type="text/css">
+
+         html {
+           background-color: #2E3440;
+           color:#D8DEE9
+           font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
+           font-family: "JetBrains Mono"; /* this should be the rest of the output you got from Google Fonts */
+         }
+
+         body {
+           background-color: #2E3440;
+         }
+
+        body, pre {
+            font-family: Consolas, Monoco, monospace;
+            font-size: 16px;
+        }
+        .main-container {
+            width: 85ch;
+            margin:0 auto;
+        }
+
+        img, video, object, embed {
+            max-width: 100%;
+            height: auto !important;
+            margin: 1em auto;
+            display: block;
+        }
+        img.photoset {
+            display: inline;
+            float:left;
+        }
+        a:hover {
+            color: black;
+            background-color: #B4EEB4;
+        }
+        a:visited, a {
+            color: #D8DEE9;
+        }
+        strong {
+            font-weight:bold;
+        }
+
+        pre {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            color: #D8DEE9;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        pre:before {
+            display:block;
+            content: "#+BEGIN_SRC";
+            color: #B22222;
+        }
+        pre:after {
+            display:block;
+            content: "#+END_SRC";
+            color: #B22222;
+        }
+
+        blockquote {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            color: #9099AB;
+        }
+        blockquote:before {
+            display:block;
+            content: "#+BEGIN_QUOTE";
+            color: #434C5E;
+        }
+        blockquote:after {
+            display:block;
+            content: "#+END_QUOTE";
+            color: #434C5E;
+        }
+
+        b, strong {
+            color: #D8DEE9;
+        }
+        b:before, strong:before {
+            content: "*";
+        }
+        b:after, strong:after {
+            content: "*";
+        }
+        em {
+            font-style: italic;
+        }
+        em:before {
+            content: "/";
+        }
+        em:after {
+            content: "/";
+        }
+
+        p {
+            margin: 1em 0;
+        }
+
+        blockquote p {
+            margin: 0;
+        }
+
+        h2:before {
+            content: "*** ";
+        }
+        h3:before {
+            content: "**** ";
+        }
+        h4:before {
+            content: "***** ";
+        }
+        h5:before {
+            content: "****** ";
+        }
+
+        .propname {
+            color:#B48EAD;
+        }
+
+        h1, h2, h3, h4, h5, h6, .l1title, .l2title {
+            margin-left:-2ch;
+            font-weight: bold;
+            color: #81A1C1;
+        }
+        .heading {
+            color: #4C566A;
+        }
+        .heading a {
+            color: #B48EAD;
+            font-weight: bold;
+        }
+
+
+        ul, ol {
+            margin: 1em 0;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        ul li:before {
+            content: "- ";
+        }
+
+
+
+
+        article, .article {
+            margin: 2em 0;
+            padding-left: 2ch;
+        }
+
+        ::selection {
+	    background: #EEDC82; /* Safari */
+	}
+        ::-moz-selection {
+	    background: #EEDC82; /* Firefox */
+        }
+
+
+
+        .clearfix {zoom:1;}
+        .clearfix:before, .clearfix:after {
+            content: "\0020";
+            display: block;
+            height: 0;
+            overflow: hidden; }
+        .clearfix:after {clear: both;}
+
+        /*Tumblr inherited */
+        iframe#tumblr_controls {}
+        .search_query {}
+        .read_more_container a {}
+        {CustomCSS}
+        </style>
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    </head>
+    <body>
+        <div class="main-container">
+            <header id="header">
+                <span class="heading">#+TITLE: <a href="/">Start Page</a></span>
+                <br /> <br />
+                <div class="article">
+                    <span class="l1title">* My Start Page</span>
+                </div>
+            </header>
+            <section class="content">
+
+                <article class="post {TagsAsClasses}">
+
+                    <p>
+                    <div class="text">
+                        <span class="l2title">** media</span></span><br />
+                        <!-- <span class="propname">:TAGS:</span>media<br /> -->
+                        <span class="propname">***</span>&nbsp;<a href="https://twitch.tv">twitch</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://www.youtube.com/">youtube</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://music.youtube.com/">youtube music</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://play.pocketcasts.com/podcasts">pocket casts</a><br />
+                    </div>
+                    </p>
+
+                    <p>
+                    <div class="text">
+                        <span class="l2title">** social media</span></span><br />
+                        <!-- <span class="propname">:TAGS:</span><br /> -->
+                        <span class="propname">***</span>&nbsp;<a href="https://twitter.com/home">twitter</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://www.reddit.com/">reddit</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://tumblr.com/">tumblr</a><br />
+                    </div>
+                    </p>
+
+                    <p>
+                    <div class="text">
+                        <span class="l2title">** news</span></span><br />
+                        <!-- <span class="propname">:TAGS:</span><br /> -->
+                        <span class="propname">***</span>&nbsp;<a href="https://www.inoreader.com/all_articles">inoreader</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://getpocket.com/en/saves">pocket</a><br />
+                    </div>
+                    </p>
+
+                    <p>
+                    <div class="text">
+                        <span class="l2title">** tracking</span></span><br />
+                        <!-- <span class="propname">:TAGS:</span><br /> -->
+                        <span class="propname">***</span>&nbsp;<a href="https://www.goodreads.com/">goodreads</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://letterboxd.com/">letterboxd</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://www.last.fm/">last.fm</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://www.tvtime.com/en">tvtime</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://howlongtobeat.com/">howlongtobeat</a><br />
+                    </div>
+                    </p>
+
+                    <p>
+                    <div class="text">
+                        <span class="l2title">** git</span></span><br />
+                        <!-- <span class="propname">:TAGS:</span><br /> -->
+                        <span class="propname">***</span>&nbsp;<a href="https://github.com/ch1ebak">github</a><br />
+                        <span class="propname">***</span>&nbsp;<a href="https://gitlab.com/ch1ebak">gitlab</a><br />
+                    </div>
+                    </p>
+
+                    <p>
+                    <div class="quote">
+                        <blockquote class="words {Length}">&#8220;<a href="https://github.com/ch1ebak">source</a>, based on <a href="https://github.com/praetoriansentry/tumblr-emacs-theme">org-mode theme for tumblr</a>&#8221;</blockquote>
+                    </div>
+                    </p>
+
+        </div>
+    </body>
+</html>
