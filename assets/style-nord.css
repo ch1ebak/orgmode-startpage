@@ -1,0 +1,173 @@
+html {
+  background-color: #2E3440;
+  color:#D8DEE9
+  font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "JetBrains Mono"; /* this should be the rest of the output you got from Google Fonts */
+}
+
+body {
+  background-color: #2E3440;
+}
+
+body, pre {
+    font-family: Consolas, Monoco, monospace;
+    font-size: 16px;
+}
+.main-container {
+    width: 85ch;
+    margin:0 auto;
+}
+
+img, video, object, embed {
+    max-width: 100%;
+    height: auto !important;
+    margin: 1em auto;
+    display: block;
+}
+img.photoset {
+    display: inline;
+    float:left;
+}
+a:hover {
+    color: black;
+    background-color: #A3BE8C;
+}
+a:visited, a {
+    color: #D8DEE9;
+}
+strong {
+    font-weight:bold;
+}
+
+pre {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #D8DEE9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+pre:before {
+    display:block;
+    content: "#+BEGIN_SRC";
+    color: #B22222;
+}
+pre:after {
+    display:block;
+    content: "#+END_SRC";
+    color: #B22222;
+}
+
+blockquote {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #9099AB;
+}
+blockquote:before {
+    display:block;
+    content: "#+BEGIN_QUOTE";
+    color: #434C5E;
+}
+blockquote:after {
+    display:block;
+    content: "#+END_QUOTE";
+    color: #434C5E;
+}
+
+b, strong {
+    color: #D8DEE9;
+}
+b:before, strong:before {
+    content: "*";
+}
+b:after, strong:after {
+    content: "*";
+}
+em {
+    font-style: italic;
+}
+em:before {
+    content: "/";
+}
+em:after {
+    content: "/";
+}
+
+p {
+    margin: 1em 0;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+h2:before {
+    content: "*** ";
+}
+h3:before {
+    content: "**** ";
+}
+h4:before {
+    content: "***** ";
+}
+h5:before {
+    content: "****** ";
+}
+
+.propname {
+    color:#B48EAD;
+}
+
+h1, h2, h3, h4, h5, h6, .l1title, .l2title {
+    margin-left:-2ch;
+    font-weight: bold;
+    color: #81A1C1;
+}
+.heading {
+    color: #4C566A;
+}
+.heading a {
+    color: #B48EAD;
+    font-weight: bold;
+}
+
+
+ul, ol {
+    margin: 1em 0;
+}
+ol {
+    list-style-type: decimal;
+}
+ul li:before {
+    content: "- ";
+}
+
+
+
+
+article, .article {
+    margin: 2em 0;
+    padding-left: 2ch;
+}
+
+::selection {
+    background: #EEDC82; /* Safari */
+}
+::-moz-selection {
+    background: #EEDC82; /* Firefox */
+    }
+
+
+
+.clearfix {zoom:1;}
+.clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+.clearfix:after {clear: both;}
+
+/*Tumblr inherited */
+iframe#tumblr_controls {}
+.search_query {}
+.read_more_container a {}
+{CustomCSS}
