@@ -1,12 +1,12 @@
 html {
-  background-color: #282A36;
-  color:#F8F8F2
+  background-color: #282828;
+  color:#ebdbb2
   font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
   font-family: "JetBrains Mono"; /* this should be the rest of the output you got from Google Fonts */
 }
 
 body {
-  background-color: #282A36;
+  background-color: #282828;
 }
 
 body, pre {
@@ -30,10 +30,10 @@ img.photoset {
 }
 a:hover {
     color: black;
-    background-color: #8BE9FD;
+    background-color: #458588;
 }
 a:visited, a {
-    color: #F8F8F2;
+    color: #ebdbb2;
 }
 strong {
     font-weight:bold;
@@ -42,39 +42,39 @@ strong {
 pre {
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #F8F8F2;
+    color: #ebdbb2;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 pre:before {
     display:block;
     content: "#+BEGIN_SRC";
-    color: #FF5555;
+    color: #cc241d;
 }
 pre:after {
     display:block;
     content: "#+END_SRC";
-    color: #FF5555;
+    color: #cc241d;
 }
 
 blockquote {
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #BFBFBF;
+    color: #ebdbb2;
 }
 blockquote:before {
     display:block;
     content: "#+BEGIN_QUOTE";
-    color: #4D4D4D;
+    color: #928374;
 }
 blockquote:after {
     display:block;
     content: "#+END_QUOTE";
-    color: #4D4D4D;
+    color: #928374;
 }
 
 b, strong {
-    color: #F8F8F2;
+    color: #ebdbb2;
 }
 b:before, strong:before {
     content: "*";
@@ -114,19 +114,19 @@ h5:before {
 }
 
 .propname {
-    color:#50FA7B;
+    color:#98971a;
 }
 
 h1, h2, h3, h4, h5, h6, .l1title, .l2title {
     margin-left:-2ch;
     font-weight: bold;
-    color: #FF79C6;
+    color: #b16286;
 }
 .heading {
-    color: #4D4D4D;
+    color: #928374;
 }
 .heading a {
-    color: #50FA7B;
+    color: #689d6a;
     font-weight: bold;
 }
 
@@ -150,10 +150,10 @@ article, .article {
 }
 
 ::selection {
-    background: #9AEDFE; /* Safari */
+    background: #83a598; /* Safari */
 }
 ::-moz-selection {
-    background: #9AEDFE; /* Firefox */
+    background: #83a598; /* Firefox */
     }
 
 
