@@ -1,12 +1,12 @@
 html {
-  background-color: #000000;
-  color:#E0E6F0
+  background-color: #101010;
+  color:#b9b9b9
   font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
   font-family: "JetBrains Mono"; /* this should be the rest of the output you got from Google Fonts */
 }
 
 body {
-  background-color: #000000;
+  background-color: #101010;
 }
 
 body, pre {
@@ -33,7 +33,7 @@ a:hover {
     background-color: #525252;
 }
 a:visited, a {
-    color: #E0E6F0;
+    color: #b9b9b9;
 }
 strong {
     font-weight:bold;
@@ -42,7 +42,7 @@ strong {
 pre {
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #E0E6F0;
+    color: #b9b9b9;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -74,7 +74,7 @@ blockquote:after {
 }
 
 b, strong {
-    color: #E0E6F0;
+    color: #b9b9b9;
 }
 b:before, strong:before {
     content: "*";
