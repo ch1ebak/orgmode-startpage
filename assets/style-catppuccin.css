@@ -1,12 +1,12 @@
 html {
-  background-color: #282A36;
-  color:#F8F8F2
+  background-color: #24273A;
+  color:#CAD3F5
   font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
   font-family: "JetBrains Mono"; /* this should be the rest of the output you got from Google Fonts */
 }
 
 body {
-  background-color: #282A36;
+  background-color: #24273A;
 }
 
 body, pre {
@@ -30,10 +30,10 @@ img.photoset {
 }
 a:hover {
     color: black;
-    background-color: #8BE9FD;
+    background-color: #8AADF4;
 }
 a:visited, a {
-    color: #F8F8F2;
+    color: #CAD3F5;
 }
 strong {
     font-weight:bold;
@@ -42,19 +42,19 @@ strong {
 pre {
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #F8F8F2;
+    color: #CAD3F5;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 pre:before {
     display:block;
     content: "#+BEGIN_SRC";
-    color: #FF5555;
+    color: #A6DA95;
 }
 pre:after {
     display:block;
     content: "#+END_SRC";
-    color: #FF5555;
+    color: #A6DA95;
 }
 
 blockquote {
@@ -74,7 +74,7 @@ blockquote:after {
 }
 
 b, strong {
-    color: #F8F8F2;
+    color: #CAD3F5;
 }
 b:before, strong:before {
     content: "*";
@@ -114,19 +114,19 @@ h5:before {
 }
 
 .propname {
-    color:#50FA7B;
+    color:#EED49F;
 }
 
 h1, h2, h3, h4, h5, h6, .l1title, .l2title {
     margin-left:-2ch;
     font-weight: bold;
-    color: #FF79C6;
+    color: #ED8796;
 }
 .heading {
     color: #4D4D4D;
 }
 .heading a {
-    color: #50FA7B;
+    color: #ED8796;
     font-weight: bold;
 }
 
