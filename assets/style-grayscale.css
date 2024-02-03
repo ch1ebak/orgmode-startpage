@@ -14,20 +14,11 @@ body, pre {
     font-size: 16px;
 }
 .main-container {
-    width: 85ch;
-    margin:0 auto;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
-img, video, object, embed {
-    max-width: 100%;
-    height: auto !important;
-    margin: 1em auto;
-    display: block;
-}
-img.photoset {
-    display: inline;
-    float:left;
-}
 a:hover {
     color: black;
     background-color: #525252;
@@ -166,8 +157,17 @@ article, .article {
     overflow: hidden; }
 .clearfix:after {clear: both;}
 
-/*Tumblr inherited */
-iframe#tumblr_controls {}
-.search_query {}
-.read_more_container a {}
-{CustomCSS}
+#page-container {
+  position: relative;
+  min-height: 90%;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 10%;
+  height: 2.5rem;            /* Footer height */
+}
