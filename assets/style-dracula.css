@@ -1,39 +1,30 @@
 html {
-  background-color: #282A36;
-  color:#F8F8F2
+  background-color: #282a36;
+  color:#e6e6e6
   font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
   font-family: "JetBrains Mono"; /* this should be the rest of the output you got from Google Fonts */
 }
 
 body {
-  background-color: #282A36;
+  background-color: #282a36;
 }
 
 body, pre {
-    font-family: Consolas, Monoco, monospace;
+    font-family: monospace;
     font-size: 16px;
 }
 .main-container {
-    width: 85ch;
-    margin:0 auto;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
-img, video, object, embed {
-    max-width: 100%;
-    height: auto !important;
-    margin: 1em auto;
-    display: block;
-}
-img.photoset {
-    display: inline;
-    float:left;
-}
 a:hover {
     color: black;
-    background-color: #8BE9FD;
+    background-color: #ff6e67;
 }
 a:visited, a {
-    color: #F8F8F2;
+    color: #e6e6e6;
 }
 strong {
     font-weight:bold;
@@ -42,19 +33,19 @@ strong {
 pre {
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #F8F8F2;
+    color: #e6e6e6;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 pre:before {
     display:block;
     content: "#+BEGIN_SRC";
-    color: #FF5555;
+    color: #bd93f9;
 }
 pre:after {
     display:block;
     content: "#+END_SRC";
-    color: #FF5555;
+    color: #bd93f9;
 }
 
 blockquote {
@@ -65,16 +56,16 @@ blockquote {
 blockquote:before {
     display:block;
     content: "#+BEGIN_QUOTE";
-    color: #4D4D4D;
+    color: #4d4d4d;
 }
 blockquote:after {
     display:block;
     content: "#+END_QUOTE";
-    color: #4D4D4D;
+    color: #4d4d4d;
 }
 
 b, strong {
-    color: #F8F8F2;
+    color: #e6e6e6;
 }
 b:before, strong:before {
     content: "*";
@@ -114,19 +105,19 @@ h5:before {
 }
 
 .propname {
-    color:#50FA7B;
+    color:#50fa7b;
 }
 
 h1, h2, h3, h4, h5, h6, .l1title, .l2title {
     margin-left:-2ch;
     font-weight: bold;
-    color: #FF79C6;
+    color: #ff79c6;
 }
 .heading {
-    color: #4D4D4D;
+    color: #4d4d4d;
 }
 .heading a {
-    color: #50FA7B;
+    color: #bd93f9;
     font-weight: bold;
 }
 
@@ -150,10 +141,10 @@ article, .article {
 }
 
 ::selection {
-    background: #9AEDFE; /* Safari */
+    background: #4d4d4d; /* Safari */
 }
 ::-moz-selection {
-    background: #9AEDFE; /* Firefox */
+    background: #4d4d4d; /* Firefox */
     }
 
 
@@ -171,3 +162,18 @@ iframe#tumblr_controls {}
 .search_query {}
 .read_more_container a {}
 {CustomCSS}
+
+#page-container {
+  position: relative;
+  min-height: 90%;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 10%;
+  height: 2.5rem;            /* Footer height */
+}
